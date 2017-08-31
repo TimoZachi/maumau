@@ -1,0 +1,68 @@
+/*
+----------------------------- CARD -----------------------------
+*/
+
+.card {
+    position:relative;
+}
+
+.card .top-action {
+    float:right;
+}
+.card .top-action .icon {
+    top:2px;
+    position:relative;
+    font-size:15px;
+}
+
+.card .footer {
+    padding:5px 15px 10px 15px;
+}
+
+/*
+----------------------------- TABLE -----------------------------
+*/
+
+.table .td-actions .action {
+    min-width:25px;
+    min-height:25px;
+    font-size:17px;
+    padding:0!important;
+}
+
+.table .td-actions .delete {
+    position:relative;
+    top:-1px;
+}
+
+.color-sample {
+    width:32px;
+    height:32px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+}
+
+.paginate {
+    float: right;
+    width:100%;
+}
+
+/*
+----------------------------- FORM -----------------------------
+*/
+
+.colorpicker {
+    display:block;
+    width:32px;
+    height:32px;
+}
+
+.cards-associated,
+.cards-non-associated {
+    min-height:200px;
+}
+
+.cards-associated {
+    border-right:1px solid gray;
+}

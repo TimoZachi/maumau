@@ -1,0 +1,418 @@
+.navbar {
+    position:absolute;
+    width:100%;
+    margin-bottom:0;
+    z-index:6;
+}
+.wrapper {
+    position:relative;
+    top:0;
+    height:100vh;
+    padding:0;
+}
+
+.sidebar {
+    background-color:white;
+    width:260px;
+    z-index:4;
+    float:left;
+    border-right:1px solid #e7e7e7;
+}
+.sidebar, .game, .game2 {
+    position:relative;
+    min-height:100%;
+    overflow:hidden;
+    padding-top:52px;
+    height:100%;
+}
+
+.sidebar .logo {
+    position:relative;
+    width:100%;
+    height:90px;
+    padding-bottom:10px;
+}
+.sidebar .toggle-button {
+    text-align:center;
+    padding:0 5px 15px 5px;
+}
+.sidebar .panel {
+    border-left:none;
+    border-right:none;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+}
+.sidebar .online {
+    overflow-x:hidden;
+    overflow-y:auto;
+    padding:0;
+}
+.sidebar .table {
+    font-size:12px;
+    margin-bottom:0;
+}
+
+.game, .game2 {
+    background:url('../img/wood.jpg') repeat;
+    z-index:2;
+    float:right;
+    width:calc(100% - 260px);
+    min-height:100%;
+}
+.game-inside {
+    position:relative;
+    min-height:100%;
+}
+
+.game-table {
+    position:absolute;
+    width:495px;
+    height:532px;
+}
+.game-table img {
+    -webkit-box-shadow:5px 5px 6px 3px rgba(0, 0, 0, .3);
+    -moz-box-shadow:5px 5px 6px 3px rgba(0, 0, 0, .3);
+    box-shadow:5px 5px 6px 3px rgba(0, 0, 0, .3);
+    user-select:none;
+}
+
+.game-table .user1,
+.game-table .user2,
+.game-table .user3,
+.game-table .user4 {
+    position:absolute;
+    width:100px;
+    height:120px;
+}
+.game-table .user1 .frame,
+.game-table .user2 .frame,
+.game-table .user3 .frame,
+.game-table .user4 .frame {
+    width:100%;
+    height:100px;
+}
+.game-table .user1 p,
+.game-table .user2 p,
+.game-table .user3 p,
+.game-table .user4 p {
+    width:100%;
+    text-align:center;
+    margin:0;
+}
+.game-table .user1 {
+    left:5px;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    -moz-transform:translateY(-50%);
+    transform:translateY(-50%);
+}
+.game-table .user2 {
+    left:50%;
+    top:5px;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+.game-table .user3 {
+    right:5px;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    -moz-transform:translateY(-50%);
+    transform:translateY(-50%);
+}
+.game-table .user4 {
+    left:50%;
+    bottom:5px;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+
+.game2 {
+    width:100%;
+    padding-bottom:200px;
+}
+.game2 .cards-panel {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:215px;
+    background:white;
+    border-top:1px solid;
+}
+.game2 .cards-panel.current {
+    border:2px solid #0ed20e;
+    background:#cff5d0;
+}
+
+.cards-panel .cards {
+    padding-left:10px;
+    width:100%;
+    overflow-x:auto;
+    overflow-y:hidden;
+    white-space: nowrap;
+    height:100%;
+    border-right:1px solid black;
+    text-align:center;
+}
+.cards-panel .game-card {
+    position:relative;
+    width:124px;
+    height:180px;
+    margin-top:10px;
+    cursor:pointer;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    user-select:none;
+    display:inline-block;
+    float:none;
+    margin-bottom:0;
+}
+
+.cards-panel .game-card:hover {
+    background:rgba(103, 103, 103, 0.19);
+}
+
+.game-table2 {
+    position:absolute;
+    width:500px;
+    height:460px;
+}
+.game-table2 .user1,
+.game-table2 .user2,
+.game-table2 .user3 {
+    position:absolute;
+    padding:10px;
+}
+.game-table2 .user1.current,
+.game-table2 .user2.current,
+.game-table2 .user3.current {
+    border:1px solid red;
+}
+
+.game-table2 .user1>*,
+.game-table2 .user2>*,
+.game-table2 .user3>* {
+    display:inline-block;
+    float:none;
+    text-align:center;
+}
+
+.game-table2 .user1 .info,
+.game-table2 .user2 .info,
+.game-table2 .user3 .info {
+    width:100px;
+    height:120px;
+}
+
+.game-table2 .user1 .frame,
+.game-table2 .user2 .frame,
+.game-table2 .user3 .frame {
+    position:relative;
+    width:100%;
+    height:100px;
+}
+.game-table2 .user1 p,
+.game-table2 .user2 p,
+.game-table2 .user3 p {
+    position:relative;
+    width:100%;
+    max-height:20px;
+    overflow:hidden;
+    text-align:center;
+    margin:0;
+}
+
+.game-table2 .user1 {
+    left:-10px;
+    top:50%;
+    -webkit-transform:translateX(-100%) translateY(-50%);
+    -moz-transform:translateX(-100%) translateY(-50%);
+    transform:translateX(-100%) translateY(-50%);
+}
+.game-table2 .user2 {
+    left:50%;
+    top:10px;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+.game-table2 .user3 {
+    left:calc(100% + 10px);
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    -moz-transform:translateY(-50%);
+    transform:translateY(-50%);
+}
+
+.game-table2 .arrows {
+    display:block;
+    position:absolute;
+    left:0;
+    top:0;
+    pointer-events:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+.game-table2 .cards {
+    position:relative;
+    width:auto;
+    height:120px;
+}
+.game-table2 .center-card {
+    width:82px;
+    height:120px;
+    -webkit-transform:translateX(-100%) translateY(-50%);
+    -moz-transform:translateX(-100%) translateY(-50%);
+    transform:translateX(-100%) translateY(-50%);
+}
+.center-card .game-card {
+    position:absolute;
+}
+
+.card-back {
+    position:absolute;
+    left:0;
+    top:0;
+    width:85px;
+    height:100%;
+    background:url('../img/cards-back.jpg');
+    background-size:85px 120px;
+    background-repeat:no-repeat;
+}
+
+.table-deck {
+    width:85px;
+    height:120px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateY(-50%);
+    padding:0;
+    margin:0;
+    right:80px;
+    cursor:pointer;
+    opacity:1;
+}
+.table-deck .card-back {
+    position:relative;
+}
+.table-deck:hover {
+    opacity:0.8;
+}
+
+.center-card #table-card {
+    width:100%;
+    position:relative;
+    height:120px;
+}
+.center-card .suit {
+    position:relative;
+    width:100%;
+    margin-top:10px;
+}
+
+#suits-container{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:600;
+    display:none;
+    background:rgba(0,0,0,0.6)
+}
+#suits-container:after {
+    content:'';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+#suit-selector{
+    position:absolute;
+    width:300px;
+    height:auto;
+    background:#fff;
+    border-radius:10px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    z-index:601;
+}
+#suit-selector .suit{
+    display:inline-block;
+    width:49%;
+    text-align:center;
+    padding:30px 0;
+    position:relative;
+}
+#suit-selector .suit img{
+    transition: border 0.2s;
+    cursor:pointer;
+}
+#suit-selector .suit::after{
+    content: attr(data-suit-name);
+    position:absolute;
+    cursor:pointer;
+    top:50%;
+    left:50%;
+    padding:0 5px;
+    background: rgba(255,255,255,0.7);
+    transform: translate(-50%,-50%);
+    transition: opacity 0.3s;
+    text-transform: uppercase;
+    opacity: 0;
+}
+#suit-selector .suit:hover img {
+    border: 3px solid #aaaaff;
+    border-radius:5px;
+    padding:15px 20px;
+    margin:-18px;
+}
+#suit-selector .suit:hover::after {
+    opacity:1;
+}
+
+.last-card {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    border-radius: 5px;
+    border: 3px solid #343434;
+    bottom: 50px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    margin: 0;
+    right: 62px;
+    text-align: center;
+    background: #AA2222;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 25px;
+    cursor:pointer;
+}
+.last-card.active {
+    color:#ff3;
+    border-color:#ff3;
+    background:#E00;
+}
+.awaiting-players {
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:1000;
+    background:rgba(0, 0, 0, .7);
+    display:none;
+}
+.awaiting-players p {
+    color:#ffffff;
+}

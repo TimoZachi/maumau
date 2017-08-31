@@ -1,0 +1,203 @@
+.main-panel-full {
+    width:100%;
+}
+.main-panel-full .card {
+    display:block;
+    width:400px;
+    margin:40px auto;
+}
+.main-panel-full .title {
+    text-align:center;
+}
+
+/*
+----------------------------- FORMULÁRIOS -----------------------------
+*/
+.checkbox, .radio {
+    padding-left:25px;
+}
+.form-inline .checkbox .icons,
+.form-inline .radio .icons,
+.form-horizontal .checkbox .icons,
+.form-horizontal .radio .icons {
+    top:6px;
+}
+
+.form-img {
+    position:relative;
+    border:1px solid #E3E3E3;
+    border-radius:5px;
+    width:100%;
+    height:160px;
+}
+
+
+/*
+----------------------------- CARTAS -----------------------------
+*/
+
+.game-card {
+    position:relative;
+    display:block;
+    float:left;
+    width:170px;
+    height:245px;
+    border:1px solid #828283;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    margin-right:10px;
+    margin-bottom:10px;
+    background:white;
+}
+
+.game-card .info,
+.game-card .info-bottom,
+.game-card .icons,
+.game-card .large {
+    position:absolute;
+    display:block;
+    color:black;
+}
+
+.game-card .info,
+.game-card .info-bottom,
+.game-card .icons {
+    font-size:15px;
+    line-height:15px;
+    width:17px;
+}
+
+.game-card .info {
+    left:5px;
+    top:0;
+}
+.game-card .info-bottom {
+    right:5px;
+    bottom:0;
+}
+.game-card .icons {
+    right:5px;
+    top:0;
+}
+
+.game-card .item,
+.game-card .icons a {
+    display:block;
+    margin:5px 0;
+    text-align:center;
+    word-wrap:break-word;
+    word-break:break-all;
+    white-space:normal;
+}
+.game-card .icons a>* {
+    color:black;
+    font-weight:bold;
+}
+.game-card .icons .delete>*   {
+    color:red;
+    font-size:24px;
+}
+
+.game-card .large {
+    font-size:25px;
+    line-height:22px;
+    text-align:center;
+}
+
+.game-card.drag * {
+    pointer-events:none;
+}
+
+.game-card.drag {
+    cursor:pointer;
+}
+
+/*
+----------------------------- OTHERS -----------------------------
+*/
+
+.last-card{
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    border-radius: 5px;
+    border: 3px solid #343434;
+    bottom: 50px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    margin: 0;
+    right: 62px;
+    text-align: center;
+    background: #AA2222;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 25px;
+    cursor:pointer;
+}
+.last-card.active{
+    color:#ff3;
+    border-color:#ff3;
+    background:#E00;
+}
+
+.center-block-absolute {
+    position:absolute;
+    display:block;
+    left:50%;
+    top:50%;
+    -webkit-transform:translateX(-50%) translateY(-50%);
+    -moz-transform:translateX(-50%) translateY(-50%);
+    transform:translateX(-50%) translateY(-50%);
+}
+.center-block-absolute-x {
+    position:absolute;
+    display:block;
+    left:50%;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+.center-block-absolute-y {
+    position:absolute;
+    display:block;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    -moz-transform:translateY(-50%);
+    transform:translateY(-50%);
+}
+
+.fit-height {
+    position:absolute;
+    width:100%;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    -moz-transform:translateY(-50%);
+    transform:translateY(-50%);
+}
+.fit-height>* {
+    width:100%;
+}
+
+.fit-width {
+    position:absolute;
+    height:100%;
+    left:50%;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+.fit-width>* {
+    height:100%;
+}
+
+.overlay {
+    width:100%;
+    height:100%;
+    min-height:400px;
+    background:rgba(0, 0, 0, .2);
+}
+
+object {
+    position:absolute;
+}
